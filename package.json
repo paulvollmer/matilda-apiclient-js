@@ -23,6 +23,7 @@
     "format": "prettier --write 'src/**/*.js'",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
+    "docs": "esdoc",
     "version": "auto-changelog -p --template keepachangelog --breaking-pattern breaking && git add CHANGELOG.md"
   },
   "dependencies": {
@@ -37,6 +38,9 @@
     "auto-changelog": "1.13.0",
     "babel-eslint": "10.0.2",
     "babel-loader": "8.0.6",
+    "esdoc": "1.1.0",
+    "esdoc-ecmascript-proposal-plugin": "1.0.0",
+    "esdoc-standard-plugin": "1.0.0",
     "eslint": "6.0.1",
     "eslint-config-prettier": "6.0.0",
     "eslint-plugin-import": "2.18.0",
