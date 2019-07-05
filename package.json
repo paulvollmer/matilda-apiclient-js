@@ -21,6 +21,7 @@
   "scripts": {
     "build": "webpack",
     "test": "jest",
+    "format": "prettier --write 'src/**/*.js'",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
     "version": "auto-changelog -p --template keepachangelog --breaking-pattern breaking && git add CHANGELOG.md"
@@ -34,9 +35,12 @@
     "@babel/plugin-transform-runtime": "7.5.0",
     "@babel/preset-env": "7.5.0",
     "auto-changelog": "1.13.0",
+    "babel-eslint": "10.0.2",
     "babel-loader": "8.0.6",
     "eslint": "6.0.1",
     "eslint-config-prettier": "6.0.0",
+    "eslint-plugin-import": "2.18.0",
+    "eslint-plugin-prettier": "3.1.0",
     "jest": "24.8.0",
     "prettier": "1.18.2",
     "webpack": "4.35.2",

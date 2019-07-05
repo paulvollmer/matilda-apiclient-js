@@ -1,5 +1,5 @@
-const queryString = require('query-string')
-require('whatwg-fetch')
+import queryString from 'query-string'
+import 'whatwg-fetch'
 
 class MatildaAPI {
   constructor(url) {
@@ -38,4 +38,4 @@ class MatildaAPI {
   }
 }
 
-module.exports = MatildaAPI
+export default MatildaAPI
