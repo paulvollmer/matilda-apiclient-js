@@ -1,3 +1,4 @@
 *.md
 .*
 webpack.config.js
+docs
