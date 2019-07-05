@@ -13,3 +13,7 @@ client.getLanguages()
 ```
 
 Generated package documentation can be found at https://paulvollmer.net/matilda-apiclient-js/
+
+## License
+
+MIT. See [LICENSE](LICENSE) for more details.
