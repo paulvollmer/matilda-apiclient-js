@@ -29,7 +29,7 @@ class MatildaAPI {
    * Get the dictionary of a word
    * @param {string} word The word to translate
    * @param {string} source The source language
-   * @param {array} target The target language
+   * @param {Array} target The target language
    * @return {Promise}
    */
   getDictionary(word, source, target) {
