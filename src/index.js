@@ -1,6 +1,8 @@
-import queryString from 'query-string'
 import 'whatwg-fetch'
 
+/**
+ * MatildaAPI client
+ */
 class MatildaAPI {
   constructor(url) {
     this.apiBase = url
@@ -21,8 +23,7 @@ class MatildaAPI {
    * @return {Promise}
    */
   getWord(word, lang) {
-    const query = queryString.stringify({ lang })
-    return window.fetch(`${this.apiBase}/word/${encodeURIComponent(word)}?${query}`)
+    return window.fetch(`${this.apiBase}/word/${encodeURIComponent(word)}?lang=${lang}`)
   }
 
   /**
@@ -33,8 +34,9 @@ class MatildaAPI {
    * @return {Promise}
    */
   getDictionary(word, source, target) {
-    const query = queryString.stringify({ source, target })
-    return window.fetch(`${this.apiBase}/dictionary/${encodeURIComponent(word)}?${query}`)
+    return window.fetch(
+      `${this.apiBase}/dictionary/${encodeURIComponent(word)}?source=${source}&target=${target.join(',')}`
+    )
   }
 }
 
