@@ -28,7 +28,7 @@
     "version": "auto-changelog -p --template keepachangelog --breaking-pattern breaking && git add CHANGELOG.md"
   },
   "dependencies": {
-    "whatwg-fetch": "3.0.0"
+    "whatwg-fetch": "3.4.1"
   },
   "devDependencies": {
     "@babel/core": "7.10.4",
